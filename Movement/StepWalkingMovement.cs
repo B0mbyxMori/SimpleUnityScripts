@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
         float z_axis = Input.GetAxisRaw("Vertical"); // NOTE: Treating z_axis as vertical.
 
         if(Input.GetKeyDown(KeyCode.UpArrow)) {
-            gameObject.transform.position = new Vector3(transform.position.x,
+            transform.position = new Vector3(transform.position.x,
                 0.5f,
                 transform.position.z + z_axis + 1);
 
@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.DownArrow)) {
-            gameObject.transform.position = new Vector3(transform.position.x,
+            transform.position = new Vector3(transform.position.x,
                 0.5f,
                 transform.position.z + z_axis - 1);
 
@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.LeftArrow)) {
-            gameObject.transform.position = new Vector3(transform.position.x + x_axis - 1,
+            transform.position = new Vector3(transform.position.x + x_axis - 1,
                 0.5f,
                 transform.position.z);
 
@@ -45,7 +45,7 @@ public class Movement : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.RightArrow)) {
-            gameObject.transform.position = new Vector3(transform.position.x + x_axis + 1,
+            transform.position = new Vector3(transform.position.x + x_axis + 1,
                 0.5f,
                 transform.position.z);
 
